@@ -7,10 +7,12 @@
 //
 
 #import "YFPlayViewController.h"
+#import "Masonry.h"
 
 @interface YFPlayViewController ()
 //歌手的背景图
 @property (weak, nonatomic) IBOutlet UIImageView *albumview;
+@property (weak, nonatomic) IBOutlet UISlider *progressSlider;
 
 @end
 
@@ -21,13 +23,24 @@
     // Do any additional setup after loading the view.
     //实现毛玻璃的效果
     [self setUpBlur];
+    //设置滑块
+    [self setSlider];
     
     
+    
+}
+- (void)setSlider{
+    [self.progressSlider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb"] forState:UIControlStateNormal];
 }
 - (void)setUpBlur{
     UIToolbar *toolbar = [[UIToolbar alloc]init];
     [self.albumview addSubview:toolbar];
+    toolbar.barStyle = UIBarStyleBlack;
     toolbar.translatesAutoresizingMaskIntoConstraints = NO;
+    [toolbar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.albumview);
+        
+    }];
     
     
 }

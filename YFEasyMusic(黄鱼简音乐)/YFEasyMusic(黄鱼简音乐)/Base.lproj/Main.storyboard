@@ -108,7 +108,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="28N-Dx-32o"/>
                                         </constraints>
-                                        <color key="minimumTrackTintColor" red="0.14901960780000001" green="0.73333333329999995" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.57254901960000004" green="0.61960784310000006" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -153,6 +154,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="albumview" destination="qkX-Yt-0xO" id="ojr-60-3eJ"/>
+                        <outlet property="progressSlider" destination="pge-ao-aFv" id="Wla-Kr-0YA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xA-vg-XJm" sceneMemberID="firstResponder"/>
