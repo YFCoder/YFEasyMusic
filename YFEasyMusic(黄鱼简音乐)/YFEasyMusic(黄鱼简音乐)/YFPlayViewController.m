@@ -13,6 +13,7 @@
 //歌手的背景图
 @property (weak, nonatomic) IBOutlet UIImageView *albumview;
 @property (weak, nonatomic) IBOutlet UISlider *progressSlider;
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
 
 @end
 
@@ -25,6 +26,18 @@
     [self setUpBlur];
     //设置滑块
     [self setSlider];
+    //实现歌手图片圆角
+    [self setCornner];
+    
+    
+    
+    
+}
+-(void)setCornner{
+    self.iconView.layer.cornerRadius = self.iconView.frame.size.width * 0.5;
+    self.iconView.layer.masksToBounds = YES;
+    self.iconView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.iconView.layer.borderWidth = 6;
     
     
     
