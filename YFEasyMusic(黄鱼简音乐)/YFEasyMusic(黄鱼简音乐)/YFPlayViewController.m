@@ -26,12 +26,17 @@
     [self setUpBlur];
     //设置滑块
     [self setSlider];
+    
+   
+    
+    
+    
+    
+}
+- (void)viewWillLayoutSubviews{
     //实现歌手图片圆角
+    
     [self setCornner];
-    
-    
-    
-    
 }
 -(void)setCornner{
     self.iconView.layer.cornerRadius = self.iconView.frame.size.width * 0.5;
