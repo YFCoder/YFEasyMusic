@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ymc-vl-BRk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Play View Controller-->
@@ -136,19 +137,39 @@
                                     <constraint firstItem="zTu-Ku-7ZL" firstAttribute="centerY" secondItem="Nis-k7-jSv" secondAttribute="centerY" id="zHX-1o-mI8"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV0-U8-Dup" userLabel="歌词">
+                                <rect key="frame" x="166" y="469" width="42" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="TxS-vd-6aU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lkq.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hGw-of-st5">
+                                <rect key="frame" x="33" y="130" width="309" height="309"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hGw-of-st5" secondAttribute="height" multiplier="1:1" id="xdJ-hL-E8X"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zJb-TP-2B5" firstAttribute="top" secondItem="Mch-7d-Q1W" secondAttribute="bottom" id="2nq-Fw-M8D"/>
+                            <constraint firstItem="qV0-U8-Dup" firstAttribute="centerX" secondItem="kdr-yt-5MJ" secondAttribute="centerX" id="32C-mZ-jwp"/>
                             <constraint firstAttribute="trailing" secondItem="Mch-7d-Q1W" secondAttribute="trailing" id="7Nh-ny-iNU"/>
                             <constraint firstItem="Mch-7d-Q1W" firstAttribute="leading" secondItem="kdr-yt-5MJ" secondAttribute="leading" id="Efb-qu-s13"/>
                             <constraint firstItem="Dab-5a-1OW" firstAttribute="leading" secondItem="kdr-yt-5MJ" secondAttribute="leading" id="Jea-8Y-k95"/>
+                            <constraint firstItem="hGw-of-st5" firstAttribute="top" secondItem="Dab-5a-1OW" secondAttribute="bottom" constant="30" id="OHL-cd-NyB"/>
                             <constraint firstAttribute="trailing" secondItem="qkX-Yt-0xO" secondAttribute="trailing" id="WeB-Km-SIP"/>
                             <constraint firstItem="qkX-Yt-0xO" firstAttribute="top" secondItem="kdr-yt-5MJ" secondAttribute="top" id="YgD-EN-LRr"/>
                             <constraint firstItem="zJb-TP-2B5" firstAttribute="top" secondItem="qkX-Yt-0xO" secondAttribute="bottom" id="cWv-n3-c9Y"/>
                             <constraint firstItem="Dab-5a-1OW" firstAttribute="top" secondItem="kdr-yt-5MJ" secondAttribute="top" id="htx-1Z-IyQ"/>
                             <constraint firstItem="qkX-Yt-0xO" firstAttribute="leading" secondItem="kdr-yt-5MJ" secondAttribute="leading" id="i0c-Kv-Bma"/>
                             <constraint firstAttribute="trailing" secondItem="Dab-5a-1OW" secondAttribute="trailing" id="nEz-vT-kI4"/>
+                            <constraint firstItem="Mch-7d-Q1W" firstAttribute="top" secondItem="qV0-U8-Dup" secondAttribute="bottom" constant="30" id="po2-7F-4ax"/>
+                            <constraint firstItem="qV0-U8-Dup" firstAttribute="top" secondItem="hGw-of-st5" secondAttribute="bottom" constant="30" id="uu9-mS-osA"/>
+                            <constraint firstItem="hGw-of-st5" firstAttribute="centerX" secondItem="qkX-Yt-0xO" secondAttribute="centerX" id="z30-Wx-H0R"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
