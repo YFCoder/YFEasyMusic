@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YFPlayViewController.h
 //  YFEasyMusic(黄鱼简音乐)
 //
 //  Created by 黄志伟 on 16/6/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YFPlayViewController : UIViewController
 
 @end
-

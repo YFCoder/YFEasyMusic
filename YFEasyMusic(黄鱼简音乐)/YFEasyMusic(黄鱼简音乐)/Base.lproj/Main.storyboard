@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Playing View Controller-->
+        <!--Play View Controller-->
         <scene sceneID="UyM-d6-YO7">
             <objects>
-                <viewController id="Ymc-vl-BRk" customClass="XMGPlayingViewController" sceneMemberID="viewController">
+                <viewController id="Ymc-vl-BRk" customClass="YFPlayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zar-fW-4M4"/>
                         <viewControllerLayoutGuide type="bottom" id="zJb-TP-2B5"/>
@@ -151,6 +151,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="albumview" destination="qkX-Yt-0xO" id="ojr-60-3eJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xA-vg-XJm" sceneMemberID="firstResponder"/>
             </objects>
