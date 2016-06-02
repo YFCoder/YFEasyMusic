@@ -51,11 +51,9 @@
     self.albumview.image = [UIImage imageNamed:playingmusic.icon];
     //播放音乐
      AVAudioPlayer *currentPlayer = [YFMusicPlayer playMusicWithFileName:playingmusic.filename];
-    self.currentTimeLable.text = [self stringWithNSTimer:currentPlayer.currentTime];
-    self.totalTimeLable.text =[self stringWithNSTimer:currentPlayer.duration];
     self.currentPlayer = currentPlayer;
-    //[self deleteProgressTimer];
-    //[self addProgressTimer];
+    [self deleteProgressTimer];
+    [self addProgressTimer];
     
     
     
@@ -74,6 +72,7 @@
 }
 //进度条时间的管理
 - (void)addProgressTimer{
+    [self updateSliderTime];
     self.progressTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateSliderTime)  userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.progressTimer forMode:NSRunLoopCommonModes];
     
@@ -87,6 +86,7 @@
 - (void)updateSliderTime{
     self.currentTimeLable.text = [self stringWithNSTimer:self.currentPlayer.currentTime];
     self.totalTimeLable.text =[self stringWithNSTimer:self.currentPlayer.duration];
+    self.progressSlider.value = self.currentPlayer.currentTime / self.currentPlayer.duration;
 
 
     
