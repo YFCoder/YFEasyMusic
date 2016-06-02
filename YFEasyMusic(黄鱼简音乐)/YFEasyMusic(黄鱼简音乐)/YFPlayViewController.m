@@ -8,12 +8,16 @@
 
 #import "YFPlayViewController.h"
 #import "Masonry.h"
+#import "YFMusic.h"
+#import "YFMusicTools.h"
 
 @interface YFPlayViewController ()
 //歌手的背景图
 @property (weak, nonatomic) IBOutlet UIImageView *albumview;
 @property (weak, nonatomic) IBOutlet UISlider *progressSlider;
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet UILabel *songLable;
+@property (weak, nonatomic) IBOutlet UILabel *singerLable;
 
 @end
 
@@ -26,10 +30,20 @@
     [self setUpBlur];
     //设置滑块
     [self setSlider];
+    //播放默认音乐并且搭建界面
+    [self playmusic];
+
     
-   
     
-    
+}
+- (void)playmusic{
+    //取出要播放的音乐
+    YFMusic* playingmusic = [YFMusicTools plsyingmusic];
+    //设置界面信息
+    self.songLable.text = playingmusic.name;
+    self.singerLable.text = playingmusic.singer;
+    self.iconView.image = [UIImage imageNamed:playingmusic.icon];
+    self.albumview.image = [UIImage imageNamed:playingmusic.icon];
     
     
 }

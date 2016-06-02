@@ -16,9 +16,14 @@ static NSArray* _musics;
 static YFMusic* _playingMusic;
 //第一次加载类的时候调用
 +(void)initialize{
+    if (_musics == nil) {
+        _musics = [YFMusic objectArrayWithFilename:@"Musics.plist"];
+    }
+    if (_playingMusic == nil) {
+        _playingMusic = _musics[1];
+
+    }
     
-    _musics = [YFMusic objectArrayWithFile:@"Musics.plist"];
-    _playingMusic = _musics[0];
 }
 
 + (NSArray *)musics{

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660E9C161D00685A00433B16 /* YFMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 660E9C151D00685A00433B16 /* YFMusicPlayer.m */; settings = {ASSET_TAGS = (); }; };
 		66198AD91CFEF80C00DF20D0 /* bb@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66198AAE1CFEF80C00DF20D0 /* bb@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		66198ADA1CFEF80C00DF20D0 /* bb_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66198AAF1CFEF80C00DF20D0 /* bb_icon@2x.jpg */; settings = {ASSET_TAGS = (); }; };
 		66198ADB1CFEF80C00DF20D0 /* dzq@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66198AB01CFEF80C00DF20D0 /* dzq@2x.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -95,6 +96,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660E9C141D00685A00433B16 /* YFMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFMusicPlayer.h; sourceTree = "<group>"; };
+		660E9C151D00685A00433B16 /* YFMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFMusicPlayer.m; sourceTree = "<group>"; };
 		66198AAE1CFEF80C00DF20D0 /* bb@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bb@2x.jpg"; sourceTree = "<group>"; };
 		66198AAF1CFEF80C00DF20D0 /* bb_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bb_icon@2x.jpg"; sourceTree = "<group>"; };
 		66198AB01CFEF80C00DF20D0 /* dzq@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dzq@2x.jpg"; sourceTree = "<group>"; };
@@ -395,6 +398,8 @@
 		6690F5871D0020220068557D /* musicplayingtools */ = {
 			isa = PBXGroup;
 			children = (
+				660E9C141D00685A00433B16 /* YFMusicPlayer.h */,
+				660E9C151D00685A00433B16 /* YFMusicPlayer.m */,
 				6690F5881D0057070068557D /* YFMusicTools.h */,
 				6690F5891D0057070068557D /* YFMusicTools.m */,
 			);
@@ -630,6 +635,7 @@
 				66BFA6851CFF3F2C00ADD6BC /* NSArray+MASAdditions.m in Sources */,
 				6690F56B1D001EEE0068557D /* YFMusic.m in Sources */,
 				663A85211CFEC26E00A7849E /* AppDelegate.m in Sources */,
+				660E9C161D00685A00433B16 /* YFMusicPlayer.m in Sources */,
 				6690F5801D001FF10068557D /* MJProperty.m in Sources */,
 				6690F5831D001FF10068557D /* NSObject+MJKeyValue.m in Sources */,
 				6690F57F1D001FF10068557D /* MJFoundation.m in Sources */,

@@ -177,6 +177,8 @@
                         <outlet property="albumview" destination="qkX-Yt-0xO" id="ojr-60-3eJ"/>
                         <outlet property="iconView" destination="hGw-of-st5" id="cDf-rY-Cj9"/>
                         <outlet property="progressSlider" destination="pge-ao-aFv" id="Wla-Kr-0YA"/>
+                        <outlet property="singerLable" destination="Mkf-Xv-kgM" id="SLG-jf-qXh"/>
+                        <outlet property="songLable" destination="qPt-2Q-MS9" id="aOv-Y3-hNC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xA-vg-XJm" sceneMemberID="firstResponder"/>
