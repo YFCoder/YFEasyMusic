@@ -66,7 +66,7 @@
 - (NSString*)stringWithNSTimer:(NSTimeInterval)time{
     
     NSInteger min = time / 60;
-    NSInteger secd = (int)time % 60;
+    NSInteger secd = (int)round(time) % 60;
     return  [NSString stringWithFormat:@"%02ld:%02ld",min,secd];
     
 }
