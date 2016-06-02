@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "YFMusic.h"
 #import "YFMusicTools.h"
+#import "YFMusicPlayer.h"
 
 @interface YFPlayViewController ()
 //歌手的背景图
@@ -44,6 +45,8 @@
     self.singerLable.text = playingmusic.singer;
     self.iconView.image = [UIImage imageNamed:playingmusic.icon];
     self.albumview.image = [UIImage imageNamed:playingmusic.icon];
+    //播放音乐
+    [YFMusicPlayer playmusicWithFileName:playingmusic.filename];
     
     
 }
