@@ -55,6 +55,16 @@
 		663A85371CFEC26E00A7849E /* YFEasyMusic_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 663A85361CFEC26E00A7849E /* YFEasyMusic_______Tests.m */; };
 		663A85421CFEC26E00A7849E /* YFEasyMusic_______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 663A85411CFEC26E00A7849E /* YFEasyMusic_______UITests.m */; };
 		663AB8491CFF3B2E00685866 /* YFPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663AB8481CFF3B2E00685866 /* YFPlayViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6690F56B1D001EEE0068557D /* YFMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F56A1D001EEE0068557D /* YFMusic.m */; settings = {ASSET_TAGS = (); }; };
+		6690F57E1D001FF10068557D /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F56F1D001FF10068557D /* MJExtensionConst.m */; settings = {ASSET_TAGS = (); }; };
+		6690F57F1D001FF10068557D /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F5711D001FF10068557D /* MJFoundation.m */; settings = {ASSET_TAGS = (); }; };
+		6690F5801D001FF10068557D /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F5731D001FF10068557D /* MJProperty.m */; settings = {ASSET_TAGS = (); }; };
+		6690F5811D001FF10068557D /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F5751D001FF10068557D /* MJType.m */; settings = {ASSET_TAGS = (); }; };
+		6690F5821D001FF10068557D /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F5771D001FF10068557D /* NSObject+MJCoding.m */; settings = {ASSET_TAGS = (); }; };
+		6690F5831D001FF10068557D /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F5791D001FF10068557D /* NSObject+MJKeyValue.m */; settings = {ASSET_TAGS = (); }; };
+		6690F5841D001FF10068557D /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F57B1D001FF10068557D /* NSObject+MJProperty.m */; settings = {ASSET_TAGS = (); }; };
+		6690F5851D001FF10068557D /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F57D1D001FF10068557D /* NSString+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
+		6690F58A1D0057070068557D /* YFMusicTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6690F5891D0057070068557D /* YFMusicTools.m */; settings = {ASSET_TAGS = (); }; };
 		66BFA67F1CFF3F2C00ADD6BC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BFA6671CFF3F2C00ADD6BC /* MASCompositeConstraint.m */; settings = {ASSET_TAGS = (); }; };
 		66BFA6801CFF3F2C00ADD6BC /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BFA66A1CFF3F2C00ADD6BC /* MASConstraint.m */; settings = {ASSET_TAGS = (); }; };
 		66BFA6811CFF3F2C00ADD6BC /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BFA66C1CFF3F2C00ADD6BC /* MASConstraintMaker.m */; settings = {ASSET_TAGS = (); }; };
@@ -141,6 +151,27 @@
 		663A85431CFEC26E00A7849E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		663AB8471CFF3B2E00685866 /* YFPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPlayViewController.h; sourceTree = "<group>"; };
 		663AB8481CFF3B2E00685866 /* YFPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPlayViewController.m; sourceTree = "<group>"; };
+		6690F5691D001EEE0068557D /* YFMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFMusic.h; sourceTree = "<group>"; };
+		6690F56A1D001EEE0068557D /* YFMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFMusic.m; sourceTree = "<group>"; };
+		6690F56D1D001FF10068557D /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		6690F56E1D001FF10068557D /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		6690F56F1D001FF10068557D /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		6690F5701D001FF10068557D /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		6690F5711D001FF10068557D /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		6690F5721D001FF10068557D /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		6690F5731D001FF10068557D /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		6690F5741D001FF10068557D /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		6690F5751D001FF10068557D /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		6690F5761D001FF10068557D /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		6690F5771D001FF10068557D /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		6690F5781D001FF10068557D /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		6690F5791D001FF10068557D /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		6690F57A1D001FF10068557D /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		6690F57B1D001FF10068557D /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		6690F57C1D001FF10068557D /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		6690F57D1D001FF10068557D /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		6690F5881D0057070068557D /* YFMusicTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFMusicTools.h; sourceTree = "<group>"; };
+		6690F5891D0057070068557D /* YFMusicTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFMusicTools.m; sourceTree = "<group>"; };
 		66BFA6661CFF3F2C00ADD6BC /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		66BFA6671CFF3F2C00ADD6BC /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		66BFA6681CFF3F2C00ADD6BC /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -289,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				66BFA6631CFF3C6600ADD6BC /* YFPlayingViewController */,
+				6690F5871D0020220068557D /* musicplayingtools */,
 				663A851F1CFEC26E00A7849E /* AppDelegate.h */,
 				663A85201CFEC26E00A7849E /* AppDelegate.m */,
 				663A85251CFEC26E00A7849E /* Main.storyboard */,
@@ -327,11 +359,54 @@
 			path = "YFEasyMusic(黄鱼简音乐)UITests";
 			sourceTree = "<group>";
 		};
+		6690F5681D001EC50068557D /* musicmodel */ = {
+			isa = PBXGroup;
+			children = (
+				6690F5691D001EEE0068557D /* YFMusic.h */,
+				6690F56A1D001EEE0068557D /* YFMusic.m */,
+			);
+			name = musicmodel;
+			sourceTree = "<group>";
+		};
+		6690F56C1D001FF10068557D /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6690F56D1D001FF10068557D /* MJExtension.h */,
+				6690F56E1D001FF10068557D /* MJExtensionConst.h */,
+				6690F56F1D001FF10068557D /* MJExtensionConst.m */,
+				6690F5701D001FF10068557D /* MJFoundation.h */,
+				6690F5711D001FF10068557D /* MJFoundation.m */,
+				6690F5721D001FF10068557D /* MJProperty.h */,
+				6690F5731D001FF10068557D /* MJProperty.m */,
+				6690F5741D001FF10068557D /* MJType.h */,
+				6690F5751D001FF10068557D /* MJType.m */,
+				6690F5761D001FF10068557D /* NSObject+MJCoding.h */,
+				6690F5771D001FF10068557D /* NSObject+MJCoding.m */,
+				6690F5781D001FF10068557D /* NSObject+MJKeyValue.h */,
+				6690F5791D001FF10068557D /* NSObject+MJKeyValue.m */,
+				6690F57A1D001FF10068557D /* NSObject+MJProperty.h */,
+				6690F57B1D001FF10068557D /* NSObject+MJProperty.m */,
+				6690F57C1D001FF10068557D /* NSString+MJExtension.h */,
+				6690F57D1D001FF10068557D /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		6690F5871D0020220068557D /* musicplayingtools */ = {
+			isa = PBXGroup;
+			children = (
+				6690F5881D0057070068557D /* YFMusicTools.h */,
+				6690F5891D0057070068557D /* YFMusicTools.m */,
+			);
+			name = musicplayingtools;
+			sourceTree = "<group>";
+		};
 		66BFA6631CFF3C6600ADD6BC /* YFPlayingViewController */ = {
 			isa = PBXGroup;
 			children = (
 				663AB8471CFF3B2E00685866 /* YFPlayViewController.h */,
 				663AB8481CFF3B2E00685866 /* YFPlayViewController.m */,
+				6690F5681D001EC50068557D /* musicmodel */,
 			);
 			name = YFPlayingViewController;
 			sourceTree = "<group>";
@@ -339,6 +414,7 @@
 		66BFA6641CFF3F0700ADD6BC /* 常用框架 */ = {
 			isa = PBXGroup;
 			children = (
+				6690F56C1D001FF10068557D /* MJExtension */,
 				66BFA6651CFF3F2C00ADD6BC /* Masonry */,
 			);
 			name = "常用框架";
@@ -548,15 +624,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				66BFA6861CFF3F2C00ADD6BC /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				6690F57E1D001FF10068557D /* MJExtensionConst.m in Sources */,
 				66BFA6841CFF3F2C00ADD6BC /* MASViewConstraint.m in Sources */,
 				66BFA67F1CFF3F2C00ADD6BC /* MASCompositeConstraint.m in Sources */,
 				66BFA6851CFF3F2C00ADD6BC /* NSArray+MASAdditions.m in Sources */,
+				6690F56B1D001EEE0068557D /* YFMusic.m in Sources */,
 				663A85211CFEC26E00A7849E /* AppDelegate.m in Sources */,
+				6690F5801D001FF10068557D /* MJProperty.m in Sources */,
+				6690F5831D001FF10068557D /* NSObject+MJKeyValue.m in Sources */,
+				6690F57F1D001FF10068557D /* MJFoundation.m in Sources */,
 				663A851E1CFEC26E00A7849E /* main.m in Sources */,
+				6690F58A1D0057070068557D /* YFMusicTools.m in Sources */,
+				6690F5811D001FF10068557D /* MJType.m in Sources */,
+				6690F5851D001FF10068557D /* NSString+MJExtension.m in Sources */,
 				66BFA6821CFF3F2C00ADD6BC /* MASLayoutConstraint.m in Sources */,
 				663AB8491CFF3B2E00685866 /* YFPlayViewController.m in Sources */,
 				66BFA6881CFF3F2C00ADD6BC /* ViewController+MASAdditions.m in Sources */,
 				66BFA6871CFF3F2C00ADD6BC /* View+MASAdditions.m in Sources */,
+				6690F5841D001FF10068557D /* NSObject+MJProperty.m in Sources */,
+				6690F5821D001FF10068557D /* NSObject+MJCoding.m in Sources */,
 				66BFA6831CFF3F2C00ADD6BC /* MASViewAttribute.m in Sources */,
 				66BFA6801CFF3F2C00ADD6BC /* MASConstraint.m in Sources */,
 				66BFA6811CFF3F2C00ADD6BC /* MASConstraintMaker.m in Sources */,
