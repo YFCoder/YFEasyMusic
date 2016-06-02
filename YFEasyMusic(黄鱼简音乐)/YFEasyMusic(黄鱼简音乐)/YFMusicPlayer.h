@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 @interface YFMusicPlayer : NSObject
+//播放音乐
 + (AVAudioPlayer*)playMusicWithFileName:(NSString*)filename;
 // 播放音效
 + (void)playSoundWithSoundName:(NSString *)soundName;
 //播放音乐
-+(void)playmusicWithFileName:(NSString *)filename;
+//+(void)playmusicWithFileName:(NSString *)filename;
 
 //暂停
 + (void)pauseMusicWithFileName:(NSString *)fileName;

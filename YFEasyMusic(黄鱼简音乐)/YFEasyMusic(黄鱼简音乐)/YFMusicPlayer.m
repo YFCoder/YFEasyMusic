@@ -7,7 +7,6 @@
 //
 
 #import "YFMusicPlayer.h"
-#import <AVFoundation/AVFoundation.h>
 
 @implementation YFMusicPlayer
 static NSMutableDictionary *_soudIDs;
@@ -26,6 +25,9 @@ static NSMutableDictionary *_players;
     //如果为空加入字典
     if (player == nil) {
         NSURL *url = [[NSBundle mainBundle] URLForResource:filename withExtension:nil];
+        if (url == nil) {
+            return nil;
+        }
         player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
         [_players setObject:player forKey:filename];
         //准备播放
@@ -84,7 +86,7 @@ static NSMutableDictionary *_players;
     // 4.播放音效
     AudioServicesPlaySystemSound(soundID);
 }//
-+(void)playmusicWithFileName:(NSString *)filename{
+/*+(void)playmusicWithFileName:(NSString *)filename{
     //创建空的播放器
     AVAudioPlayer *player = nil;
     //从字典中区
@@ -100,6 +102,6 @@ static NSMutableDictionary *_players;
     }
     [player play];
     
-}
+}*/
 
 @end
