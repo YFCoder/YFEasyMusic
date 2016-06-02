@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <AVFoundation/AVFoundation.h>
 @interface YFMusicPlayer : NSObject
++ (AVAudioPlayer*)playMusicWithFileName:(NSString*)filename;
 // 播放音效
 + (void)playSoundWithSoundName:(NSString *)soundName;
 //播放音乐

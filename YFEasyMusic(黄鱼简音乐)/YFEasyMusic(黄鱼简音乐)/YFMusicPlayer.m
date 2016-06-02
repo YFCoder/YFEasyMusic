@@ -18,6 +18,25 @@ static NSMutableDictionary *_players;
     _soudIDs = [NSMutableDictionary dictionary];
     _players = [NSMutableDictionary dictionary];
 }
++ (AVAudioPlayer*)playMusicWithFileName:(NSString*)filename{
+    //创建空的播放器
+    AVAudioPlayer *player = nil;
+    //从字典中区
+    player = _players[filename];
+    //如果为空加入字典
+    if (player == nil) {
+        NSURL *url = [[NSBundle mainBundle] URLForResource:filename withExtension:nil];
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+        [_players setObject:player forKey:filename];
+        //准备播放
+        [player prepareToPlay];
+        
+    }
+    [player play];
+    return player;
+    
+}
+
 
 + (void)pauseMusicWithFileName:(NSString *)fileName
 {
