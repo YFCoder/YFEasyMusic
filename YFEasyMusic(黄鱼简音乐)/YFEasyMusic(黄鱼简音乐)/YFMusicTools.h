@@ -7,9 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+@class YFMusic;
 
 @interface YFMusicTools : NSObject
 //返回数组音乐
 + (NSArray*)musics;
 
+//返回正在播放的Music
++ (YFMusic*)plsyingmusic;
+
+//设置音乐
++ (void)setUpMusic:(YFMusic*)music;
 @end
