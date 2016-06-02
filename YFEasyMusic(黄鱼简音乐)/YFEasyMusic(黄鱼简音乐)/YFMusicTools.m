@@ -20,6 +20,7 @@ static NSArray *_musics;
 }
 
 + (NSArray *)musics{
+    return _musics;
     
 }
 
