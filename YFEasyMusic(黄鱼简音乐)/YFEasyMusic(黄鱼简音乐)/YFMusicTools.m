@@ -36,5 +36,22 @@ static YFMusic* _playingMusic;
     
     _playingMusic = music;
 }
++ (void)nextMusic{
+    NSInteger currrenIndex = [_musics indexOfObject:_playingMusic];
+    currrenIndex = currrenIndex+1;
+    if (currrenIndex>=_musics.count) {
+        currrenIndex = 0;
+    }
+    _playingMusic = _musics[currrenIndex];
+    
+}
++ (void)preMusic{
+    NSInteger currentIndex = [_musics indexOfObject:_playingMusic];
+    currentIndex = currentIndex - 1;
+    if (currentIndex < 0) {
+        currentIndex = _musics.count - 1;
+    }
+    _playingMusic = _musics[currentIndex];
+}
 
 @end

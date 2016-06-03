@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalTimeLable;
 @property(nonatomic,strong) NSTimer* progressTimer;
 @property(nonatomic,weak) AVAudioPlayer *currentPlayer;
+@property (weak, nonatomic) IBOutlet UIButton *startOrStopButton;
 
 @end
 
@@ -54,6 +55,7 @@
     self.currentPlayer = currentPlayer;
     [self deleteProgressTimer];
     [self addProgressTimer];
+    self.startOrStopButton.selected = self.currentPlayer.isPlaying;
     
     
     
@@ -81,6 +83,10 @@
 - (IBAction)progressValueChange:(id)sender {
     //跟新时间
     self.currentTimeLable.text = [self stringWithNSTimer:self.progressSlider.value * self.currentPlayer.duration];
+}
+#pragma mark -开始与停止按钮的监听
+- (IBAction)playStopButton:(id)sender {
+    
 }
 
 

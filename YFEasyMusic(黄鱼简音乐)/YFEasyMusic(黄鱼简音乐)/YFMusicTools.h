@@ -18,4 +18,7 @@
 
 //设置音乐
 + (void)setUpMusic:(YFMusic*)music;
+//设置上下手音乐
++ (void)nextMusic;
++ (void)preMusic;
 @end

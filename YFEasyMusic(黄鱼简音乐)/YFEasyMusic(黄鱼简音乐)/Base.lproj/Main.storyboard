@@ -75,6 +75,10 @@
                                         </constraints>
                                         <state key="normal" image="player_btn_play_normal"/>
                                         <state key="selected" image="player_btn_pause_normal"/>
+                                        <connections>
+                                            <action selector="end:" destination="Ymc-vl-BRk" eventType="touchUpInside" id="izg-L7-t72"/>
+                                            <action selector="playStopButton:" destination="Ymc-vl-BRk" eventType="touchUpInside" id="Uva-Bz-UBH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTu-Ku-7ZL" userLabel="下一首">
                                         <rect key="frame" x="249" y="56" width="64" height="64"/>
@@ -185,6 +189,7 @@
                         <outlet property="progressSlider" destination="pge-ao-aFv" id="Wla-Kr-0YA"/>
                         <outlet property="singerLable" destination="Mkf-Xv-kgM" id="SLG-jf-qXh"/>
                         <outlet property="songLable" destination="qPt-2Q-MS9" id="aOv-Y3-hNC"/>
+                        <outlet property="startOrStopButton" destination="rp4-MI-3vD" id="BjG-ww-f62"/>
                         <outlet property="totalTimeLable" destination="xvS-ac-niW" id="ArJ-YJ-XMa"/>
                     </connections>
                 </viewController>
