@@ -111,6 +111,11 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="maximumTrackTintColor" red="0.57254901960000004" green="0.61960784310000006" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="end:" destination="Ymc-vl-BRk" eventType="touchUpInside" id="rGo-vw-Za6"/>
+                                            <action selector="progressValueChange:" destination="Ymc-vl-BRk" eventType="valueChanged" id="S9d-5Y-6PH"/>
+                                            <action selector="start:" destination="Ymc-vl-BRk" eventType="touchDown" id="qNB-6L-EJd"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

@@ -63,6 +63,30 @@
     
     [self setCornner];
 }
+
+#pragma mark -滑块的事件处理
+- (IBAction)start:(id)sender {
+    
+    
+    //开始滑动移除定时器
+    
+    [self deleteProgressTimer];
+}
+
+- (IBAction)end:(id)sender {
+    self.currentPlayer.currentTime = self.progressSlider.value * self.currentPlayer.duration;
+    
+    [self addProgressTimer];
+}
+- (IBAction)progressValueChange:(id)sender {
+    //跟新时间
+    self.currentTimeLable.text = [self stringWithNSTimer:self.progressSlider.value * self.currentPlayer.duration];
+}
+
+
+
+
+
 - (NSString*)stringWithNSTimer:(NSTimeInterval)time{
     
     NSInteger min = time / 60;
